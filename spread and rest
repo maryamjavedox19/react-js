@@ -1,0 +1,21 @@
+const array1=[1,2,3,4];
+const array2=[...array1, 5];
+console.log(array2);
+
+const object1={
+    name: 'max'
+};
+
+const obj2={
+    ...object1,
+    age: 5
+}
+
+console.log(obj2)
+
+
+//rest
+const filter=(...args)=>{
+    return args.filter(el=>el===1);
+}
+console.log(filter(1,2,3));
